@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste Target Sistemas</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Teste Estágio Target Sistemas</h1>
+    </header>
+    <main>
+      <section>
+        <h2>
+          1 - Dado a sequência de Fibonacci, onde se inicia por 0 e 1 e o
+          próximo valor sempre será a soma dos 2 valores anteriores (exemplo: 0,
+          1, 1, 2, 3, 5, 8, 13, 21, 34...), escreva um programa na linguagem que
+          desejar onde, informado um número, ele calcule a sequência de
+          Fibonacci e retorne uma mensagem avisando se o número informado
+          pertence ou não a sequência.
+        </h2>
+        <label for="numero">Digite um número para análise:</label>
+        <input type="text" id="numero" />
+        <button onclick="checarNumeroFibonacci()">Verificar</button>
+        <p id="resultado"></p>
+      </section>
+      <section>
+        <h2>
+          2 - Escreva um programa que verifique, em uma string, a existência da
+          letra "a", seja maiúscula ou minúscula, além de informar a quantidade
+          de vezes em que ela ocorre.
+        </h2>
+        <label for="texto">Digite o texto para análise:</label>
+        <input type="text" id="texto" />
+        <button onclick="verificarLetrasA()">Verificar</button>
+        <p id="resultado2"></p>
+      </section>
+      <section>
+        <h2>3 - Observe o trecho de código abaixo:</h2>
+        <p>
+          int INDICE = 12, SOMA = 0, K = 1; enquanto K < INDICE faça { K = K +
+          1; SOMA = SOMA + K; } imprimir(SOMA);
+        </p>
+        <p>Ao final do processamento, qual será o valor da variável SOMA?</p>
+        <p>SOMA = 77</p>
+      </section>
+      <section>
+        <h2>4 - Descubra a lógica e complete o próximo elemento:</h2>
+        <ul>
+          <li>a - 1, 3, 5, 7, <span>9</span></li>
+          <p>Números Ìmpares de 2 em 2</p>
+          <li>b - 2, 4, 8, 16, 32, 64, 128</li>
+          <p>Cada número é o dobro do anterior.</p>
+          <li>c - 0, 1, 4, 9, 16, 25, 36, <span>49</span></li>
+          <p>Sequência de quadrados</p>
+          <li>d - 4, 16, 36, 64, <span>100</span></li>
+          <p>Quadrado de números pares</p>
+          <li>e - 1, 1, 2, 3, 5, 8, <span>13</span></li>
+          <p>Seqência de Fibonacci</p>
+          <li>f - 2,10, 12, 16, 17, 18, 19, <span>200</span></li>
+          <p>Números que começam com a letra D</p>
+        </ul>
+      </section>
+      <section>
+        <h2>
+          5 - Você está em uma sala com três interruptores, cada um conectado a
+          uma lâmpada em salas diferentes. Você não pode ver as lâmpadas da sala
+          em que está, mas pode ligar e desligar os interruptores quantas vezes
+          quiser. Seu objetivo é descobrir qual interruptor controla qual
+          lâmpada. Como você faria para descobrir, usando apenas duas idas até
+          uma das salas das lâmpadas, qual interruptor controla cada lâmpada?
+        </h2>
+        <p>1 -Ligo o interruptor 1 por uns 15 minutos para aquecer a lampada</p>
+        <p>2 - desligo o interruptor 1 e ligo o 2</p>
+        <p>
+          3- vou até a sala, a lampada que está apagada e quente pertence ao
+          interruptor 1,a lampada que está acesa pertence ao interruptor 2, e a
+          lampada apagada e fria pertence ao interruptor 3
+        </p>
+      </section>
+    </main>
+
+    <script src="/assets/Js/script.js"></script>
+  </body>
+</html>
