@@ -13,7 +13,7 @@ function verificarNumeroFibonacci(numero) {
 
 function checarNumeroFibonacci() {
   const input = document.getElementById("numero");
-  const numero = parseInt(input.value, 10); // Use input.value para obter o valor do campo de entrada
+  const numero = parseInt(input.value, 10);
   const resultado = document.getElementById("resultado");
 
   if (isNaN(numero)) {
