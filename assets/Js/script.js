@@ -22,9 +22,9 @@ function checarNumeroFibonacci() {
   }
 
   if (verificarNumeroFibonacci(numero)) {
-    resultado.textContent = `${numero} pertence à sequência de Fibonacci.`;
+    resultado.innerHTML = `<span style="color:  #5e1a03; font-size: 1.4rem">${numero}</span> pertence à sequência de Fibonacci.`;
   } else {
-    resultado.textContent = `${numero} não pertence à sequência de Fibonacci.`;
+    resultado.innerHTML = `<span style="color:  #5e1a03; font-size: 1.4rem">${numero}</span> não pertence à sequência de Fibonacci.`;
   }
 }
 
@@ -40,11 +40,11 @@ function verificarLetrasA() {
   const countMaiusculas = (texto.match(/A/g) || []).length;
 
   if (countMinusculas > 0 || countMaiusculas > 0) {
-    resultado2.textContent =
-      `A letra "a" minúscula ocorre ${countMinusculas} vez(es) na string. ` +
-      `A letra "A" maiúscula ocorre ${countMaiusculas} vez(es) na string.`;
+    resultado2.innerHTML =
+      `A letra "<span style="color: #5e1a03;">a</span>" minúscula ocorre <span style="color: #5e1a03;">${countMinusculas}</span> vez(es) na string. ` +
+      `A letra "<span style="color: #5e1a03;">A</span>" maiúscula ocorre <span style="color: #5e1a03;">${countMaiusculas}</span> vez(es) na string.`;
   } else {
-    resultado2.textContent =
-      'A letra "a" (maiúscula ou minúscula) não ocorre na string.';
+    resultado2.innerHTML =
+      'A letra "<span style="color: #5e1a03;">a</span>" (maiúscula ou minúscula) não ocorre na string.';
   }
 }

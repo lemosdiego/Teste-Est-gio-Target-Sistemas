@@ -41,7 +41,8 @@ ul {
 }
 
 span {
-  color: #006400;
+  color: #5e1a03;
+  font-weight: 800;
 }
 
 @media (max-width: 480px) {
